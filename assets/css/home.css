@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+	color: rgb(32, 32, 32);
+}
+
+a {
+	text-decoration: none;
+}
+
+h1{
+   font-size: 4rem;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+	margin: 10rem auto;
+	text-align: center;
+	align-items: center;
+}
+
+.btn {
+	background: #fff;
+	cursor: pointer;
+	padding: 0.5rem 0rem;
+	margin-top: 1rem;
+	border: 2px solid rgb(32, 32, 32);
+	border-radius: 0.5rem;
+	text-align: center;
+	height: 3rem;
+	width: 10rem;
+}
+
+.btn:hover {
+   cursor: pointer;
+   background: rgb(248, 248, 248);
+   transform: translateY(-0.15rem);
+   transition: transform 200ms;
+}
