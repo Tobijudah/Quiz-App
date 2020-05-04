@@ -3,10 +3,10 @@ let correctAns;
 let currentQuestion;
 let answeredCorrect;
 let chosenAnswer = false;
-let question = document.querySelector("#question");
-let scoreCounter = document.querySelector('#score');
-let options = document.querySelectorAll(".option");
 let nextButton = document.querySelector(".btn");
+let question = document.querySelector("#question");
+let options = document.querySelectorAll(".option");
+let scoreCounter = document.querySelector('#score');
 let questionCounter = document.querySelector("#question-counter");
 const numOfQuestions = 5;
 
@@ -79,7 +79,8 @@ function fetchQuestions(){
 // go to next question
 function next() {
 	if (currentQuestion === 4){
-		return document.body.innerText = 'index.html'
+		localStorage.setItem('finalScore', score)
+		return window.location.assign("/end.html")
    }
    
    currentQuestion++
@@ -148,3 +149,4 @@ function togggleNextButton() {
 
 // STATE: CAN MARK CORRECT AND WRONG; AND INDICATE RIGHT ANSWER IF WRONG
 // STATE: COUNTS SCORES AND DISABLES NEXT BUTON WHEN ANSWER HAS NOT BEEN CHOSEN
+// STATE: STORES SCORE IN LOCAL STORAGE
