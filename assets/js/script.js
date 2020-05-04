@@ -69,7 +69,6 @@ function fetchQuestions(){
       option.classList.remove('option-wrong')
 	})
 
-	
 	setCorrectAnswer()
 	
 	chosenAnswer = false
@@ -97,23 +96,26 @@ function checkOption(){
 
       option.addEventListener('click', function(e){
    
-         if(e.target.getAttribute('num') == correctAns.getAttribute('num')){
+         if(!chosenAnswer){
+				
+				if(e.target.getAttribute('num') == correctAns.getAttribute('num')){
             
-            e.target.classList.add('option-correct')
-				answeredCorrect = true
-				score += 10
-				scoreCounter.textContent = score
-            
-         }
-         else {
-            e.target.classList.add('option-wrong')
-            answeredCorrect = false
-         }
-
-         if(!answeredCorrect){
-				correctAns.classList.add('option-correct')
+					e.target.classList.add('option-correct')
+					answeredCorrect = true
+					score += 10
+					scoreCounter.textContent = score
+					
+				}
+				else {
+					e.target.classList.add('option-wrong')
+					answeredCorrect = false
+				}
+	
+				if(!answeredCorrect){
+					correctAns.classList.add('option-correct')
+				}
+	
 			}
-
 			chosenAnswer = true
 			togggleNextButton()
          
@@ -130,6 +132,7 @@ function setCorrectAnswer() {
 	})
 }
 
+// Show and Hide Next button
 function togggleNextButton() {
 	if(!chosenAnswer){
 		nextButton.style.display = 'none'
@@ -138,8 +141,6 @@ function togggleNextButton() {
 		nextButton.style.display = 'inline-block'
 	}
 }
-
-
 
 
 
