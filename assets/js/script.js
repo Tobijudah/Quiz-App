@@ -80,7 +80,7 @@ function fetchQuestions(){
 function next() {
 	if (currentQuestion === 4){
 		localStorage.setItem('finalScore', score)
-		return window.location.assign("/end.html")
+		return window.location.href = "end.html"
    }
    
    currentQuestion++
