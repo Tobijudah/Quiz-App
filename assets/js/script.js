@@ -1,9 +1,10 @@
-let score;
+let score
 let correctAns;
 let currentQuestion;
 let answeredCorrect;
-let chosenAnswer = true
+let chosenAnswer = false;
 let question = document.querySelector("#question");
+let scoreCounter = document.querySelector('#score');
 let options = document.querySelectorAll(".option");
 let nextButton = document.querySelector(".btn");
 let questionCounter = document.querySelector("#question-counter");
@@ -55,6 +56,7 @@ function init() {
    fetchQuestions()
 	nextButton.addEventListener('click', next) 
 	checkOption()
+	togggleNextButton()
 }
 
 // fetch questions from database
@@ -66,7 +68,13 @@ function fetchQuestions(){
       option.classList.remove('option-correct')
       option.classList.remove('option-wrong')
 	})
+
+	
 	setCorrectAnswer()
+	
+	chosenAnswer = false
+
+	togggleNextButton()
 }
 
 // go to next question
@@ -80,6 +88,7 @@ function next() {
 	fetchQuestions()
 	
 	questionCounter.innerText = currentQuestion + 1
+
 }
 
 // check if clicked option is correct or wrong 
@@ -91,7 +100,9 @@ function checkOption(){
          if(e.target.getAttribute('num') == correctAns.getAttribute('num')){
             
             e.target.classList.add('option-correct')
-            answeredCorrect = true
+				answeredCorrect = true
+				score += 10
+				scoreCounter.textContent = score
             
          }
          else {
@@ -101,7 +112,10 @@ function checkOption(){
 
          if(!answeredCorrect){
 				correctAns.classList.add('option-correct')
-         }
+			}
+
+			chosenAnswer = true
+			togggleNextButton()
          
       })
    })
@@ -116,6 +130,20 @@ function setCorrectAnswer() {
 	})
 }
 
+function togggleNextButton() {
+	if(!chosenAnswer){
+		nextButton.style.display = 'none'
+	}
+	else{
+		nextButton.style.display = 'inline-block'
+	}
+}
+
+
+
+
+
 
 
 // STATE: CAN MARK CORRECT AND WRONG; AND INDICATE RIGHT ANSWER IF WRONG
+// STATE: COUNTS SCORES AND DISABLES NEXT BUTON WHEN ANSWER HAS NOT BEEN CHOSEN
