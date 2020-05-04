@@ -100,3 +100,19 @@ h2 > span {
    background: rgb(175, 42, 24);
    color: #fff;
 }
+
+@media (max-width: 870px){
+   .options {
+      display: grid;
+      grid-template-columns: 100%;
+   }
+
+   
+.option:nth-child(odd) {
+   margin-right: 0;
+}
+
+.option:nth-child(even) {
+   margin-left: 0;
+}
+}
