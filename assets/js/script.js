@@ -14,32 +14,32 @@ const numOfQuestions = 5;
 let dataBase = [
 	{
 		question:
-			"1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laboriosam perferendis labore magni! Quidem deserunt velit, libero repellat odit eligendi magni.",
-		options: ['One', 'Two', 'Three', 'Four'],
-		answer: 1,
+			"Can you fill the blank space? \n 19 = 8 ,  6 = 3 , 70 = 7 , 8 = 5 , 4 = 4 , 60 = 5 , 15 = 7 , 16 = ? , 17 = ?",
+		options: ['5 & 10', '11 & 6', '7 & 9', '3 & 8'],
+		answer: 3,
 	},
 	{
 		question:
-			"2 sit amet, consectetur adipisicing elit. Est laboriosam perferendis labore magni! Quidem deserunt velit, libero repellat odit eligendi magni.",
-		options: [1, 2, 3, 4],
+			"How many fingers do you have?",
+		options: [8, 9, 10, 11],
+		answer: 1
+	},
+	{
+		question:
+			"Which is a hypothetical string theory weightless particle?",
+		options: ['the Earth', 'Graviton', 'Nebuleon', 'atoms'],
 		answer: 2
 	},
 	{
 		question:
-			"3 Lorem ipsum dolor sit ayne6be6um. Est laboriosam perferendis lah75h7b5bh7h524nu6nm84q3 nyen6bu 4",
-		options: [1, 2, 3, 4],
-		answer: 3
-	},
-	{
-		question:
-			"4 ipsum dolor sit amet, consectetur adipisicing elit. Est laboriosam perferendis labore magni! Quidem deserunt velit, libero repellat odit eligendi magni.",
-      options: [5, 6, 7, 8],
+			"Choose the right spelling. Also remember this: blue, red, blue, yellow.",
+      options: ['Antidistestablishmenterianism', 'the right spelling', 'Antidisastablishmenterianism', 'Antidisestablishmentarianism'],
       answer: 4
 	},
 	{
 		question:
-			"5 dolor sit amet, consectetur adipisicing elit. Est laboriosam perferendis labore magni! Quidem deserunt velit, libero repellat odit eligendi magni.",
-      options: [9, 0, 11, 12],
+			"Which of these creatures is real?",
+      options: ['fish in trees', 'xenomorph', 'grunt helms', 'barrel bears'],
       answer: 1
 	},
 ];
