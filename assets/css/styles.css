@@ -184,6 +184,10 @@ h3 > span {
    .container{
       height: 100vh;
    }
+
+   .body {
+      min-width: 500px;
+   }
 }
 
 @media (max-width: 870px){
