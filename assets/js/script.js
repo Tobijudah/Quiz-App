@@ -33,7 +33,7 @@ let dataBase = [
 	},
 	{
 		question:
-			"Choose the right spelling. Also remember this: blue, red, blue, yellow.",
+			"Choose the right spelling. \n Also remember this: blue, red, blue, yellow.",
       options: ['Antidistestablishmenterianism', 'the right spelling', 'Antidisastablishmenterianism', 'Antidisestablishmentarianism'],
       answer: 4
 	},
