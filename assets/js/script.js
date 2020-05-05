@@ -4,7 +4,7 @@ let currentQuestion;
 let answeredCorrect;
 let chosenAnswer;
 let nextButton = document.querySelector(".btn");
-let progressBar = document.querySelector('#progressBar')
+let progressBar = document.querySelector('#progressBar'); 
 let question = document.querySelector("#question");
 let options = document.querySelectorAll(".option");
 let scoreCounter = document.querySelector('#score');
