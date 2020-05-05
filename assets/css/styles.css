@@ -147,11 +147,13 @@ h3 > span {
 .option-correct:hover {
 	background: rgba(24, 175, 24, 0.863);
 	box-shadow: 0.1rem 0 0 0 #0071bd;
+   color: white;
 }
 
 .option-wrong:hover {
 	background: rgba(175, 42, 24, 0.863);
 	box-shadow: 0.1rem 0 0 0 #0071bd;
+   color: white;
 }
 
 .fa-arrow-right:hover {
@@ -228,12 +230,10 @@ h3 > span {
    .option-correct:hover {
       background: rgba(38, 206, 57, 0.747);
       box-shadow: 0.1rem 0 0 0 rgb(24, 175, 24);
-      color: white;
    }
    
    .option-wrong:hover {
       background: rgba(206, 57, 38, 0.829);
       box-shadow: 0.1rem 0 0 0 rgb(175, 42, 24);
-      color: white;
    }
 }
