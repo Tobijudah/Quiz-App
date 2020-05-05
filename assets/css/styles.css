@@ -8,7 +8,6 @@ body {
    font-family: 'Poppins', sans-serif;
    background: rgb(32, 32, 32);
    color: #fff;
-   height: 100vh;
 }
 
 h1 {
@@ -49,6 +48,7 @@ h3 > span {
    display: flex;
    justify-content: center;
    align-items: center;
+   height: 100vh;
 }
 
 .card {
