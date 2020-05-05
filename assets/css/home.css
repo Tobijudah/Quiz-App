@@ -3,7 +3,8 @@
 	padding: 0;
 	margin: 0;
 	font-family: "Poppins", sans-serif;
-	color: rgb(32, 32, 32);
+	background: rgb(32, 32, 32);
+	color: white;
 }
 
 a {
@@ -14,11 +15,26 @@ h1{
    font-size: 4rem;
 }
 
+#scoreMessage {
+	margin-top: 5rem;
+}
+
+#scoreDisplay, #scoreMessage {
+	color: rgb(32, 32, 32);
+	background: rgba(222, 226, 228, 0);
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	width: 65%;
-	margin: 10rem auto;
+	margin: 0 auto;
 	text-align: center;
 	align-items: center;
 }
@@ -33,11 +49,25 @@ h1{
 	text-align: center;
 	height: 3rem;
 	width: 10rem;
+	color: #016bb3;
+	box-shadow: 0.2rem 0 0 0 #0071bd;
 }
 
 .btn:hover {
    cursor: pointer;
-   background: rgb(248, 248, 248);
+	background: rgba(222, 226, 228, 0.774);
+	box-shadow: 0.2rem 0 0 0 #0071bd;
    transform: translateY(-0.15rem);
    transition: transform 200ms;
+}
+
+.mini-card {
+	margin-top: 1rem;;
+   color: rgb(32, 32, 32);
+   padding: 1rem;
+   margin-bottom: 1.5rem;
+   border: 2px solid #242423;
+   border-radius: 0.5rem;
+   background: rgba(222, 226, 228, 0.774);
+	box-shadow: 0.2rem 0 0 0 #0071bd;
 }
