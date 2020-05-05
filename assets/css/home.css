@@ -21,7 +21,7 @@ h1{
 
 #scoreDisplay, #scoreMessage {
 	color: rgb(32, 32, 32);
-	background: rgba(222, 226, 228, 0);
+	background: transparent;
 }
 
 #tm {
@@ -59,7 +59,7 @@ h1{
 
 .btn:hover {
    cursor: pointer;
-	background: rgba(222, 226, 228, 0.774);
+	background: rgba(184, 200, 207, 0.774);
 	box-shadow: 0.1rem 0 0 0 #0071bd;
    transform: translateY(-0.15rem);
    transition: transform 200ms;
@@ -72,6 +72,6 @@ h1{
    margin-bottom: 1.5rem;
    border: 2px solid #242423;
    border-radius: 0.5rem;
-   background: rgba(222, 226, 228, 0.774);
+   background: rgba(184, 200, 207, 0.774);
 	box-shadow: 0.1rem 0 0 0 #0071bd;
 }
