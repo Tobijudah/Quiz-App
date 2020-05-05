@@ -5,21 +5,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="assets/css/styles.css" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap"
 			rel="stylesheet"
 		/>
-		<title>Quizer</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		<title>Quizr</title>
 	</head>
 
 	<body>
 		<div class="container">
 
-			<div class="heading">
-				<h2>QUI<span style="color: #0071bd;">Z</span>R&trade;</h2>
-				
-			</div>
-
 			<div class="body">
+				<div class="heading">
+					<h2>QUI<span style="color: #0071bd;">Z</span>R<span id="tm">&trade;</span></h2>
+					
+				</div>
+				
 				<div class="score-board">
 					<h3 class="mini-card">Question: <span id="question-counter">1</span></h3>
 					<h3 class="mini-card">Score: <span id="score">0</span></h3>
@@ -45,7 +46,7 @@
 				</div>
 
 				<div class="btn-container">
-					<button class="btn" type="submit">Next</button>
+					<button class="btn" type="submit">Next <i class="fas fa-arrow-right"></i></button>
 				</div>
 			</div>
          
