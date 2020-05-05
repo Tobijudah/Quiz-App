@@ -48,7 +48,6 @@ h3 > span {
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 100vh;
 }
 
 .card {
@@ -181,6 +180,11 @@ h3 > span {
    transition: width 1000ms;
 }
 
+@media (min-width: 871px){
+   .container{
+      height: 100vh;
+   }
+}
 
 @media (max-width: 870px){
 
