@@ -24,6 +24,10 @@ h1{
 	background: rgba(222, 226, 228, 0);
 }
 
+#tm {
+   font-weight: 100;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
