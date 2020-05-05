@@ -1,8 +1,8 @@
-let score
+let score;
 let correctAns;
 let currentQuestion;
 let answeredCorrect;
-let chosenAnswer = false;
+let chosenAnswer;
 let nextButton = document.querySelector(".btn");
 let question = document.querySelector("#question");
 let options = document.querySelectorAll(".option");
@@ -51,12 +51,13 @@ init();
 
 // initialize game
 function init() {
-	currentQuestion = 0;
    score = 0;
+	chosenAnswer = false
+	currentQuestion = 0;
    fetchQuestions()
-	nextButton.addEventListener('click', next) 
 	checkOption()
 	togggleNextButton()
+	next()
 }
 
 // fetch questions from database
@@ -77,19 +78,24 @@ function fetchQuestions(){
 }
 
 // go to next question
-function next() {
-	if (currentQuestion === 4){
-		localStorage.setItem('finalScore', score)
-		return window.location.href = "end.html"
-   }
-   
-   currentQuestion++
+function next(){
+		nextButton.addEventListener('click', function(){
+		if (currentQuestion === 4){
+			localStorage.setItem('finalScore', score)
+			return window.location.href = "end.html"
+		}
 
-	fetchQuestions()
-	
-	questionCounter.innerText = currentQuestion + 1
+		if (currentQuestion === 3){
+			nextButton.textContent = 'Finish '
+		}
+		
+		currentQuestion++
 
-}
+		fetchQuestions()
+		
+		questionCounter.innerText = currentQuestion + 1
+
+	})}
 
 // check if clicked option is correct or wrong 
 function checkOption(){
