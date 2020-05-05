@@ -8,6 +8,7 @@ body {
    font-family: 'Poppins', sans-serif;
    background: rgb(32, 32, 32);
    color: #fff;
+   height: 100vh;
 }
 
 h1 {
@@ -39,7 +40,7 @@ h3 > span {
 
 .score-board {
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-around;
 }
 
 .container {
