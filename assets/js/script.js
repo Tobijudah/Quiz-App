@@ -4,6 +4,7 @@ let currentQuestion;
 let answeredCorrect;
 let chosenAnswer;
 let nextButton = document.querySelector(".btn");
+let progressBar = document.querySelector('#progressBar')
 let question = document.querySelector("#question");
 let options = document.querySelectorAll(".option");
 let scoreCounter = document.querySelector('#score');
@@ -95,6 +96,8 @@ function next(){
 		
 		questionCounter.innerText = currentQuestion + 1
 
+		progressBar.style.width = `${(currentQuestion + 1) * 20}%`
+
 	})}
 
 // check if clicked option is correct or wrong 
@@ -155,4 +158,7 @@ function togggleNextButton() {
 
 // STATE: CAN MARK CORRECT AND WRONG; AND INDICATE RIGHT ANSWER IF WRONG
 // STATE: COUNTS SCORES AND DISABLES NEXT BUTON WHEN ANSWER HAS NOT BEEN CHOSEN
+// STATE: CANNOT SELECT ANSWER MORE THAN ONCE
 // STATE: STORES SCORE IN LOCAL STORAGE
+// STATE: PRODUCTION READY..ADDING EXTRA FEATURES
+// STATE: ADDED PROGRESS BAR
