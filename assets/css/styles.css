@@ -72,13 +72,13 @@ h3 > span {
 	text-align: center;
 	width: 10rem;
    color: #0071bd;
-   box-shadow: 0.2rem 0 0 0 #0071bd;
+   box-shadow: 0.1rem 0 0 0 #0071bd;
 }
 
 .btn:hover, .option:hover {
    cursor: pointer;
 	background: rgba(222, 226, 228, 0.774);
-	box-shadow: 0.2rem 0 0 0 #0071bd;
+	box-shadow: 0.1rem 0 0 0 #0071bd;
    transform: translateY(-0.15rem);
    transition: transform 200ms;
    color: #242423;
@@ -96,7 +96,7 @@ h3 > span {
    border: 2px solid #242423;
    border-radius: 0.5rem;
    background: rgba(222, 226, 228, 0.774);
-	box-shadow: 0.2rem 0 0 0 #0071bd;
+	box-shadow: 0.1rem 0 0 0 #0071bd;
 }
 
 .header {
@@ -106,7 +106,7 @@ h3 > span {
    border: 2px solid #242423;
    border-radius: 0.5rem;
    background: rgba(222, 226, 228, 0.774);
-	box-shadow: 0.2rem 0 0 0 #0071bd;
+	box-shadow: 0.1rem 0 0 0 #0071bd;
 }
 
 .header h2 {
@@ -145,12 +145,12 @@ h3 > span {
 
 .option-correct:hover {
 	background: rgba(24, 175, 24, 0.863);
-	box-shadow: 0.2rem 0 0 0 #0071bd;
+	box-shadow: 0.1rem 0 0 0 #0071bd;
 }
 
 .option-wrong:hover {
 	background: rgba(175, 42, 24, 0.863);
-	box-shadow: 0.2rem 0 0 0 #0071bd;
+	box-shadow: 0.1rem 0 0 0 #0071bd;
 }
 
 @media (max-width: 870px){
@@ -190,13 +190,13 @@ h3 > span {
 
    .option-correct:hover {
       background: rgba(38, 206, 57, 0.747);
-      box-shadow: 0.2rem 0 0 0 rgb(24, 175, 24);
+      box-shadow: 0.1rem 0 0 0 rgb(24, 175, 24);
       color: white;
    }
    
    .option-wrong:hover {
       background: rgba(206, 57, 38, 0.829);
-      box-shadow: 0.2rem 0 0 0 rgb(175, 42, 24);
+      box-shadow: 0.1rem 0 0 0 rgb(175, 42, 24);
       color: white;
    }
 }
