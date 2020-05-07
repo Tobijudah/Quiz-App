@@ -35,6 +35,30 @@ body {
    font-weight: 100;
 }
 
+#pop-up {
+	display: none;
+	/* position: fixed;
+	top: 3.2rem; */
+	background: rgba(184, 200, 207, 0.938);
+	height: max-content;
+	width: 70vw;
+}
+
+#help {
+	position: fixed;
+	top: 0.2rem;
+	right: 1rem;
+	font-weight: 600;
+}
+
+#pop-up > h2, #pop-up > p{
+	background: rgba(184, 200, 207, 0);
+	color: rgb(32, 32, 32);
+	margin-bottom: 1.2rem;
+	font-weight: 600;
+	font-size: 1.6rem;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -76,4 +100,16 @@ body {
    border-radius: 0.5rem;
    background: rgba(184, 200, 207, 0.774);
 	box-shadow: 0.1rem 0 0 0 #0071bd;
+}
+
+@media (max-width: 870px){
+	#pop-up {
+		width: 80vw;
+	}
+
+	#pop-up > h2, #pop-up > p{
+		margin-bottom: 1rem;
+		font-weight: 400;
+		font-size: 1.1rem;
+	}
 }
