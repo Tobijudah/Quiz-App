@@ -15,7 +15,7 @@ const numOfQuestions = 5;
 let dataBase = [
 	{
 		question:
-			"Can you fill the blank space? \n 19 = 8 ,  6 = 3 , 70 = 7 , 8 = 5 , 4 = 4 , 60 = 5 , 15 = 7 , 16 = ? , 17 = ?",
+			"Can you fill the blank spaces? \n 19 = 8 ,  6 = 3 , 70 = 7 , 8 = 5 , 4 = 4 , 60 = 5 , 15 = 7 , 16 = ? , 17 = ?",
 		options: ['5 & 10', '11 & 6', '7 & 9', '3 & 8'],
 		answer: 3,
 	},
